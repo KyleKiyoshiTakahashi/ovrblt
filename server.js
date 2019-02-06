@@ -48,6 +48,7 @@ app.use(express.static(__dirname + '/angular-app/dist/angular-app'));
 
 
 
+
 // session configuration, will store users cart
 app.use(session({
     secret: 'mySecret',
