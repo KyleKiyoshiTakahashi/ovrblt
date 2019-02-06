@@ -1,0 +1,34 @@
+<div class="carousel">
+<ngb-carousel *ngIf="images">
+    <ng-template ngbSlide>
+      <img [src]="images[0]" alt="Random first slide">
+      <div class="carousel-caption">
+        <h3>Our Mission</h3>
+        <p>We carry only the strongest and most durable bags and accessories.</p>
+      </div>
+    </ng-template>
+    <ng-template ngbSlide>
+      <img [src]="images[1]" alt="Random second slide">
+      <div class="carousel-caption">
+        <h3>Fast And Dependable Flat Rate Shipping</h3>
+        <p>All orders ship the same day.</p>
+      </div>
+    </ng-template>
+    <ng-template ngbSlide>
+      <img [src]="images[2]"  alt="Random third slide">
+      <div class="carousel-caption">
+        <h3>Proudly Located In Oakland, California</h3>
+        <h4>Visit Us</h4>
+        <p>123 Something Street</p>
+        <p>Oakland, Ca 94607</p>
+      </div>
+    </ng-template>
+    <ng-template ngbSlide>
+      <img [src]="images[3]" alt="Random fourth slide">
+      <div class="carousel-caption">
+        <h3>Backpacks Perfect for your daily commute</h3>
+        <p> <a href="/backpacks"> Check them out</a></p>
+      </div>
+    </ng-template>
+  </ngb-carousel>
+</div>

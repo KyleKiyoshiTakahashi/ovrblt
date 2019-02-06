@@ -1,0 +1,12 @@
+<div class="container">
+  <h3>Messenger Bags</h3>
+<div  class="product-block" *ngFor="let product of allProducts   ">
+    <div class="product-style"  *ngIf="product.category == 'messenger bags'" >
+    <p><a [routerLink]="['/product', product._id]"><img src="{{ product.image }}" height="240" width="240px"></a></p>
+    <p>{{ product.brand.toUpperCase() }}</p>
+    <p>{{ product.name}}</p>
+    <p>${{ product.price }}</p>
+    <p><button type="button"  class="btn btn-dark btn-lg btn-block" (click)="onAddProductToCart(product)">Add to cart</button></p>
+  </div>
+</div>
+</div>

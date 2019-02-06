@@ -1,0 +1,38 @@
+
+<div class="container">
+    <h2 class="page-header">Welcome {{user.first_name}}!</h2>
+    <div class="image-block">
+        
+        <img src="https://i.imgur.com/cvsSVlt.jpg" alt="">
+        <a class="go-home" href="/home">Enter the store</a>
+    </div>
+    
+    <div *ngIf="user" class="user-mobile">
+        
+        <a class="mobile-enter" href="/home">Enter The Store</a>
+    </div>
+    <div *ngIf=" user.isAdmin == true " >
+        <a class="admin-dash" href="/admin-dash">Admin Dashboard <i class="fas fa-arrow-alt-circle-right"></i></a>
+    </div>
+    <div class="orders-block">
+        <h4>Here are all your recent orders:</h4>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Order ID</th>
+                    <th>Order Placed</th>
+                    <th>Order Status</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let order of orders ">
+                    <td>{{ order._id }}</td>
+                    <td>{{ stringAsDate(order.createdAt) | date:'MM / dd / yyyy HH:mm:ss'}}</td>
+                    <td>{{ order.status }}</td>
+                    <td><button><a [routerLink]="['/orders/view', order._id]"><i class="fas fa-eye"></i>View</a></button></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

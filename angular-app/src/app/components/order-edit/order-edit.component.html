@@ -1,0 +1,32 @@
+<div class="container">
+
+<h1>Edit Order</h1>
+
+
+<form (submit)='editOrderSubmit()'>
+  <table>
+    <thead>
+      <tr>
+        <th>Products</th>
+        <th>Qty</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let product of order.products">
+        <td><i class="fas fa-dot-circle"></i> <img src="{{ product.image}}" height="30px" width="30px">  {{product.brand}} {{product.name}} ${{product.price}}</td>
+        
+        <td><input type="text" name="product.quantity"[(ngModel)]="product.quantity" > </td>
+      </tr>
+    </tbody>
+  </table>
+  <p class="ship-info">Shipping Information <i class="fas fa-shipping-fast"></i></p>
+  <p>Name: <input type="text"    name="order.userName"[(ngModel)]="order.userName"/></p>
+  <p>Status: <input type="text"    name="order.status"[(ngModel)]="order.status"/></p>
+  <p>Address: <input type="text"    name="order.address"[(ngModel)]="order.address"/></p>
+  <p>City: <input type="text"    name="order.city"[(ngModel)]="order.city"/></p>
+  <p>State: <input type="text"    name="order.state"[(ngModel)]="order.state"/></p>
+  <p>Zipcode: <input type="text"    name="order.zipcode"[(ngModel)]="order.zipcode"/></p>
+  <input type="submit" value="UPDATE">
+  <button  class='btn' (click)='cancelCreate()'>Cancel</button>
+</form> 
+</div>

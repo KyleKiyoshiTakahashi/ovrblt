@@ -1,0 +1,15 @@
+h1{
+    font-family: 'Roboto Mono', monospace;
+}
+.container{
+    /* margin-top: 25px; */
+    border: 1px solid white;
+    box-shadow: 0 4px 8px 0 rgba(119, 125, 10, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 100%;
+    min-height: 400px;
+}
+h3{
+    font-family: 'Roboto Mono', monospace;
+    color: #5C5D5D;
+    text-decoration: underline;
+}

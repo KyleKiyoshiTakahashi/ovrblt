@@ -1,0 +1,30 @@
+<app-carousel-home></app-carousel-home>
+<app-backpack-carousel></app-backpack-carousel>
+<app-messengerbag-carousel></app-messengerbag-carousel>
+
+
+<div class="container">
+    <div class="image-home" >
+         <img class="image-block" src="https://i.imgur.com/plKsZd5.jpg" alt="">
+    </div>
+    <h1>All Products</h1>
+    <div class="search">
+
+        <p class="search-by-brand" >Search By Brand: <input type="text" [(ngModel)]="searchText" /></p>
+
+    </div>
+
+
+    <div class="product-block" *ngFor="let product of allProducts | searchBrand: searchText ">
+        <p><a [routerLink]="['/product', product._id]"><img class="product-image" src="{{ product.image }}" height="240" width="240px"></a></p>
+        <p class="product-brand">{{ product.brand.toUpperCase() }}</p>
+        <p class="product-name">{{ product.name}}</p>
+        <p class="product-price"><i class="fas fa-dollar-sign"></i>
+
+            {{ product.price }}</p>
+        <p><button mdbBtn type="button"   class="btn btn-dark btn-lg btn-block" (click)="onAddProductToCart(product)" mdbWavesEffect>Add to
+                cart</button></p>
+
+    </div>
+
+</div>

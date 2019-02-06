@@ -1,0 +1,23 @@
+<div class="container">
+<h3>Messenger Bags</h3>
+<a class="link-to-category" [routerLink]="['/messengerbags']">See All Messenger Bags > </a>
+<drag-scroll>
+    <!-- <img drag-scroll-item src="some-url" />
+    <img drag-scroll-item src="some-url" />
+    <img drag-scroll-item src="some-url" /> -->
+  
+    <div class="item-block" drag-scroll-item  *ngFor="let product of allProducts ">
+        <div  *ngIf="product.category == 'messenger bags' " >
+      
+        <a  [routerLink]="['/product', product._id]"><img  src="{{ product.image }}" ></a>
+      
+         <p class="product-brand" >{{ product.brand.toUpperCase() }}</p>
+        <p class="product-name"  >{{ product.name}}</p>
+        <p class="product-price"  ><i class="fas fa-dollar-sign"></i>
+
+            {{ product.price }}</p>
+        <p ><button type="button"  class="btn btn-dark btn-lg btn-block" (click)="onAddProductToCart(product)">Add to cart</button></p> 
+    </div>
+  </div> 
+</drag-scroll>
+</div>

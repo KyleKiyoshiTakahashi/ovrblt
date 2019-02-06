@@ -1,0 +1,92 @@
+
+#nav-btn{
+ 
+  background-color: white;
+  height: 43px;
+  width: 43px;
+  margin-left: 5px;
+}
+
+.nav-item{
+  color: white;
+}
+
+.nav-link{
+  color: white;
+  font-size: 12px;
+  font-family: 'Roboto Mono', monospace;
+  margin-left: 10px;
+}
+
+
+.navbar-brand{
+  color: white;
+  font-size: 40px;
+  font-family: 'Major Mono Display', monospace;
+  margin-left: 10px;
+}
+
+
+.container {
+    display: inline-block;
+    cursor: pointer;
+    background-color: black;
+    background-image: url('https://i.imgur.com/FTWl7D3.jpg');
+    background-size: cover; 
+    
+  
+  }
+  
+#navbar{
+  
+  width: 100%;
+}
+
+  .bar1, .bar2, .bar3 {
+    width: 26px;
+    height: 3px;
+    background-color: black;
+    margin-top: 5px ;
+   margin-bottom:5px;
+   margin-right: 7px;
+  
+    /* transition: 0.4s; */
+  }
+  
+  /* Rotate first bar */
+  .change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+    transform: rotate(-45deg) translate(-9px, 6px) ;
+  }
+  
+  /* Fade out the second bar */
+  .change .bar2 {
+    opacity: 0;
+  }
+  
+  /* Rotate last bar */
+  .change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+    transform: rotate(45deg) translate(-8px, -8px) ;
+  }
+
+@media (max-width: 768px) {
+    
+  .nav-link{
+      color: white;
+      font-size: 20px;
+      font-family: 'Roboto Mono', monospace;
+     padding-top: 10px;
+     
+      text-align: center
+  }
+  .container{
+    background-color: black;
+    background-image: none;
+    
+  }
+  #navbar{
+    height: 320px;
+  }
+  
+} 

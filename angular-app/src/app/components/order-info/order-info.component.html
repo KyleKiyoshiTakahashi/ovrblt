@@ -1,0 +1,32 @@
+
+<div class="container">
+  <div>
+    <table class="table table-striped">
+      <thead>
+        <h3>Items In Order</h3>
+        <tr>
+          <th>Image</th>
+          <th>Name</th>
+          <th>Price</th>
+          <th>Qty</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let product of order.products">
+          <td><i class="fas fa-dot-circle"></i> <img src="{{ product.image}}" height="55px" width="55px">   </td>
+          <td>{{product.name}} </td>
+          <td>${{product.price}}</td>
+          <td>{{product.quantity}} </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div>
+    <h3>Customer Info</h3>
+    <p>Customer Name: {{order.userName}}</p>
+    <p>Customer Email: {{order.email}}</p>
+    <p>Status: {{order.status}}</p>
+    <p>Amount: ${{order.amount}}</p>
+    
+  </div>
+</div>

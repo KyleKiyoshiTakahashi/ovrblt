@@ -1,0 +1,18 @@
+
+<h2>Create A New Product</h2>
+
+<form (submit)="onNewProductSubmit()">
+  <div class="form-group">
+  <p>Brand: <input type="text" class="form-control"  oninput="this.value = this.value.toLowerCase()" name="newProduct.brand" [(ngModel)]="newProduct.brand"></p>
+  <p>Name: <input type="text" class="form-control"  name="newProduct.name" [(ngModel)]="newProduct.name"></p>
+  <p>Description: <textarea class="form-control" rows="4" cols="50" name="newProduct.description" [(ngModel)]="newProduct.description"></textarea></p>
+  <!-- <p>Description: <input type="text" name="newProduct.description" [(ngModel)]="newProduct.description"></p> -->
+  <p>Price $: <input type="text" class="form-control"  name="newProduct.price" [(ngModel)]= "newProduct.price" ></p>
+  <p>Image url: <input type="text" class="form-control"  name="newProduct.image" [(ngModel)]="newProduct.image"></p>
+  <p>Category: <input type="text" class="form-control"  oninput="this.value = this.value.toLowerCase()" name="newProduct.category" [(ngModel)]="newProduct.category"></p>
+  <p>Inventory: <input type="number" class="form-control"  name="newProduct.inventory" [(ngModel)]="newProduct.inventory"></p>
+  <p><input class="create-btn" type="submit"  value="Create"></p>
+  <button class='btn' class="btn btn-warning" (click)='cancelCreate()'>Cancel</button><br/><br/>
+  </div>
+</form>
+

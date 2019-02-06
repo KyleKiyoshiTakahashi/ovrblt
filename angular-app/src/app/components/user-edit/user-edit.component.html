@@ -1,0 +1,16 @@
+<div class="container">
+<h1>Edit a User</h1>
+
+
+   
+<form (submit)='editUserSubmit()'>
+  Email: <input type="text" oninput="this.value = this.value.toLowerCase()" name="user.email" [(ngModel)]="user.email">
+  First Name: <input type="text"    name="user.first_name"[(ngModel)]="user.first_name"/>*<br/><br/>
+  Last Name: <input type="text"    name="user.last_name"[(ngModel)]="user.last_name"/>*<br/><br/>
+  Last Name: <input type="text"    name="user.last_name"[(ngModel)]="user.last_name"/>*<br/><br/>
+  Admin Status: <input type="text"    name="user.isAdmin"[(ngModel)]="user.isAdmin"/>*<br/><br/>
+  
+ <input type="submit" value="UPDATE">
+ <button class='btn' (click)='cancelCreate()'>Cancel</button><br/><br/>
+</form>
+</div>

@@ -1,0 +1,110 @@
+.search{
+    margin-left: 63%;
+}
+
+div .product-block{
+    border: 1px solid black;
+    height: 500px;
+    width: auto;
+    display: inline-block;
+    padding: 10px;
+    color: black;
+    background-color: white;
+    margin-left: 5px;
+    margin-bottom: 5px;
+    font-family: 'Roboto Mono', monospace;
+  
+
+}
+
+.image-block{
+  width: 100%;
+  height: 550px;
+  
+  /* display: block; */
+}
+
+.product-brand{
+  font-size: 20px;
+  font-weight: bold;
+  font-family: 'Roboto Mono', monospace;
+}
+.product-name{
+color: #414646;
+font-family: 'Roboto Mono', monospace;
+}
+.product-price{
+  color: #C79F00;
+  font-size: 20px;
+  font-weight: bold;
+  
+  font-family: 'Roboto Mono', monospace;
+}
+
+.search-by-brand{
+  font-size: 20px;
+  color: white;
+  font-family: 'Roboto Mono', monospace;
+}
+
+.container{
+    margin-top: 10px;
+    background-color: black;
+    width: 100%;
+    min-height: 500px;
+    
+}
+
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+  display: flex;
+}
+
+.carousel-inner .carousel-item-right.active,
+.carousel-inner .carousel-item-next {
+  transform: translateX(25%);
+}
+
+.carousel-inner .carousel-item-left.active, 
+.carousel-inner .carousel-item-prev {
+  transform: translateX(-25%);
+}
+  
+.carousel-inner .carousel-item-right,
+.carousel-inner .carousel-item-left{ 
+  transform: translateX(0);
+  
+}
+
+h1{
+  color: white;
+  font-family: 'Roboto Mono', monospace;
+  padding-top: 10px;
+}
+
+@media (max-width: 768px) {
+  .search {
+    display: none;
+  }
+  div .product-block{
+    width: 100%;
+    height: 27rem;
+    display: block;
+    margin-left: 0%;
+  }
+  .product-image{
+    margin-left: 5%;
+    width: 90%;
+    height: 275px; 
+  }
+  .product-brand{
+    display: none;
+  }
+  .product-name{
+    display: none;
+  }
+  .image-home{
+    display: none;
+  }
+}

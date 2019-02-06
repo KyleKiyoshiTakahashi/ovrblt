@@ -1,0 +1,61 @@
+.content-block{
+    border: 1px solid white;
+    margin-top: 35px;
+    /* background-color: yellow; */
+    height: 400px;
+    width: 100%;
+}
+
+.text-block{
+    
+    margin-left: 10%;
+    margin-top: 3%;
+    height: 85%;
+    width: 70%;
+    background-color: white;
+    background-image: url('https://i.imgur.com/25UmxBh.jpg?1');
+    background-repeat: no-repeat;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+.thankyou{
+    width: 40%;
+   position: absolute;
+   margin-top: 5%;
+   margin-left: 10px;
+    font-size: 15px;
+    font-family: 'Roboto Mono', monospace;
+   line-height: 4px;
+    color: white;
+}
+
+.conf{
+    width: 20%;
+    height: 40px;
+    position: absolute;
+    margin-top: 6%;
+    margin-left: 10px;
+     font-size: 15px;
+     font-family: 'Roboto Mono', monospace;
+    
+     color: white;
+}
+
+button {
+    position: absolute;
+    margin-top: 12%;
+    margin-left: 12px;
+    width: 200px;
+    height: 30px;
+    color: black;
+    border-radius: 3px;
+    background-color: #F6FC85;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+.btn-text{
+    color: black;
+    font-family: 'Roboto Mono', monospace;
+}

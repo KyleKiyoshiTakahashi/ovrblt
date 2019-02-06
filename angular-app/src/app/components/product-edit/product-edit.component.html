@@ -1,0 +1,24 @@
+{{  brandErrorMessage | json }}
+{{ nameErrorMessage | json }}
+{{ descriptionErrorMessage | json }}
+{{ priceErrorMessage | json }}
+{{ imageErrorMessage | json }}
+{{ categoryErrorMessage | json }}
+{{ inventoryErrorMessage | json }}
+<h1>Edit a Product</h1>
+
+
+   
+<form (submit)='editProductSubmit()'>
+      Brand: <input type="text" oninput="this.value = this.value.toLowerCase()" name="product.brand" [(ngModel)]="product.brand">
+      Name : <input type="text"    name="product.name"[(ngModel)]="product.name"/>*<br/><br/>
+      <p>Description: <textarea rows="4" cols="50" name="product.description" [(ngModel)]="product.description"></textarea></p>
+      Price : <input type="text"   name="product.price" [(ngModel)]="product.price"/>*<br/><br/>
+      Image : <input type="text"   name="product.image" [(ngModel)]="product.image"/><br/><br/>
+      <p>Category: <input type="text" oninput="this.value = this.value.toLowerCase()" name="product.category" [(ngModel)]="product.category"></p>
+      <p>Inventory: <input type="number" name="product.inventory" [(ngModel)]="product.inventory"></p>
+     <input type="submit" value="UPDATE">
+     <button class='btn' (click)='cancelCreate()'>Cancel</button><br/><br/>
+</form>
+
+

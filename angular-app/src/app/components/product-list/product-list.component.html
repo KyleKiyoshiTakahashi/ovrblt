@@ -1,0 +1,45 @@
+<div class="add-products-block">
+    <a class="add-products" href="/create">Add New Products <i class="fas fa-arrow-alt-circle-right"></i></a>
+</div>
+<div class="container" >
+  <h4>Products List</h4>   
+
+<div class="search-area">
+
+      <p>Search By Brand or Category Name: <input type="text"   [(ngModel)]= "searchText" /></p>
+    
+</div>
+    
+    <div   >
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Image</th>
+        <th scope="col">Brand</th>
+        <th scope="col">Name</th>
+        <th scope="col">Category</th>
+        <th scope="col">Price</th>
+        <th scope="col">Inventory</th>
+        <th scope="col">Actions</th>
+      </tr>
+    </thead>
+  
+    <tbody>
+       
+      <tr *ngFor="let product of allProducts | filter: searchText " >
+        <td><img src="{{ product.image }}" height="100px" width="100px"></td>
+        <td>{{ product.brand.toUpperCase() }}</td>
+        <td>{{ product.name}}</td>
+        <td>{{ product.category.toUpperCase() }}</td>
+        <td>${{ product.price }}</td>
+        <td>{{ product.inventory }}</td>
+        <td>  <button><a [routerLink]="['/edit', product._id]"><i class="far fa-edit"></i></a></button>
+          <button (click)="destroyProduct(product._id)"><i class="fas fa-trash-alt"></i></button></td>
+      </tr>
+    
+    </tbody>
+ 
+  </table>
+ </div>
+
+</div>

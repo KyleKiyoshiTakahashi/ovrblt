@@ -1,0 +1,44 @@
+
+  <div id="wrapper">
+      <div id="left">
+        <div id="signin">
+          <div class="logo">
+          </div>        
+          <form (submit)='userLoginSubmit()'>
+              <div>
+                <label>Email Address</label>
+                <input type="email" class="text-input" name="email" [(ngModel)]="email">
+                <label>Password</label>
+                <input type="password" class="text-input" name="password" [(ngModel)]="password" /><br /><br />
+                <input class="primary-btn" type="submit" value="Login">
+              </div>
+            </form>
+          <div class="links">
+            <a href="#">Forgot Password</a>
+          
+          </div>
+          <div class="or">
+            <hr class="bar" />
+            <span>OR</span>
+            <hr class="bar" />
+          </div>
+          <a href="/register" class="secondary-btn">Create an account</a>
+        </div>
+        <footer id="main-footer">
+          <p>Copyright &copy; 2018, OvrBlt All Rights Reserved</p>
+          <div>
+            <a href="#">terms of use</a> | <a href="#">Privacy Policy</a>
+          </div>
+        </footer>
+      </div>
+      <div id="right">
+        <div id="showcase">
+          <div class="showcase-content">
+            <h1 class="showcase-text">
+              Quality products that will last a  <strong>lifetime</strong>
+            </h1>
+            <a href="/home" id="enter" class="secondary-btn">Enter <i class="fas fa-sign-in-alt"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
