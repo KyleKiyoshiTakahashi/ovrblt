@@ -82,7 +82,7 @@ mongoose.connection.on("error", (err)=>{
 
 
 app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, './angular-app/dist/angular-app/index.html'));
+  res.sendFile(path.resolve('./angular-app/dist/angular-app/index.html'));
 });
 // app.get('*', (req, res) => {
 //     res.sendFile(path.join(__dirname, 'public/index.html'));
