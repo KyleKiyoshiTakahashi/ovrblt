@@ -25,10 +25,11 @@ import { OrderInfoComponent } from './components/order-info/order-info.component
 
 const routes: Routes = [
   { path: "", pathMatch:"full", redirectTo: "home" },
+  { path: 'home', component: HomeComponent },
   { path: 'register', component: UserRegisterComponent},
   { path: 'dashboard', component: UserDashboardComponent},
   { path: 'login', component: UserLoginComponent},
-  { path: 'home', component: HomeComponent },
+  
   { path: 'create', component: ProductCreationComponent, canActivate:[AuthGuard]},
   { path: 'products', component: ProductListComponent },
   { path: 'edit/:id', component:ProductEditComponent, canActivate:[AuthGuard] },

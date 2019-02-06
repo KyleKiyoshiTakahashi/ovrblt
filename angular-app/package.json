@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "node server.js",
+    "start": "ng serve",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
@@ -12,8 +12,7 @@
   },
   "private": true,
   "dependencies": {
-    "@angular/cli": "~7.0.4",
-    "@angular/compiler-cli": "~7.0.0",
+ 
     "@angular/animations": "~7.0.0",
     "@angular/cdk": "^7.2.2",
     "@angular/common": "~7.0.0",
@@ -45,10 +44,11 @@
     "rxjs": "~6.3.3",
     "rxjs-compat": "^6.3.3",
     "stripe": "^6.20.0",
-    "zone.js": "~0.8.26",
-    "typescript": "~3.1.1"
+    "zone.js": "~0.8.26"
   },
   "devDependencies": {
+    "@angular/cli": "~7.0.4",
+    "@angular/compiler-cli": "~7.0.0",
     "@angular-devkit/build-angular": "~0.10.0",
     "@angular/language-service": "~7.0.0",
     "@types/node": "~8.9.4",
@@ -64,10 +64,8 @@
     "karma-jasmine-html-reporter": "^0.2.2",
     "protractor": "~5.4.0",
     "ts-node": "~7.0.0",
-    "tslint": "~5.11.0"
-  },
-  "engines": {
-    "node": "10.13.0",
-    "npm": "6.5.0"
+    "tslint": "~5.11.0",
+    "typescript": "~3.1.1"
   }
+  
 }
