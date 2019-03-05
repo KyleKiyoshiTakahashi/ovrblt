@@ -46,21 +46,6 @@ require('./config/passport')(passport);
 app.use(express.static(__dirname + '/angular-app/dist/angular-app'));
 
 
-
-
-
-// session configuration, will store users cart
-app.use(session({
-    secret: 'mySecret',
-    resave: false,
-    saveUninitialized: false,
-    store: new MongoStore({ mongooseConnection: mongoose.connection}),
-    cookie: { maxAge: 180 * 60 * 1000 }
-}));
-
-
-
-
 // user routes
 app.use('/users', users);
 
