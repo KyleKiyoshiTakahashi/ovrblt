@@ -50,14 +50,7 @@ export class CartService {
   getTotal() {
     return this.totall;
   }
-  itemslenth() {
-    var tempItem = JSON.parse(localStorage.getItem("items"));
-    if (tempItem.length > 0) {
-      return true;
-    }
-    else
-      return false;
-  }
+  
   // send order to create stripe customer and charge
   sendOrder(token){
     let headers = new Headers({'token': token, 'amount': this.totall});
