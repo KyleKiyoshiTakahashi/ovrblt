@@ -2,6 +2,7 @@
 MEAN stack E-commerce
 
 
+
 <img width="1280" alt="Screen Shot 2019-05-22 at 3 46 53 PM" src="https://user-images.githubusercontent.com/43252585/58214225-d799aa00-7ca9-11e9-9ea7-2d20a33ebec2.png">
 
 <img width="1280" alt="Screen Shot 2019-05-22 at 3 47 01 PM" src="https://user-images.githubusercontent.com/43252585/58214226-d799aa00-7ca9-11e9-9052-0bd16238db6d.png">
@@ -11,6 +12,10 @@ MEAN stack E-commerce
 <img width="1280" alt="Screen Shot 2019-05-22 at 3 47 22 PM" src="https://user-images.githubusercontent.com/43252585/58214228-d799aa00-7ca9-11e9-8160-bbffdc75548b.png">
 
 <img width="1280" alt="Screen Shot 2019-05-22 at 3 50 21 PM" src="https://user-images.githubusercontent.com/43252585/58214229-d8324080-7ca9-11e9-92a9-33d642d602e9.png">
+
+<img width="1280" alt="Screen Shot 2019-05-22 at 3 50 11 PM" src="https://user-images.githubusercontent.com/43252585/58214321-221b2680-7caa-11e9-92ab-94116084ef04.png">
+
+<img width="1280" alt="Screen Shot 2019-05-22 at 3 50 06 PM" src="https://user-images.githubusercontent.com/43252585/58214322-221b2680-7caa-11e9-8343-1e7c0bd3aced.png">
 
 <img width="808" alt="Screen Shot 2019-05-22 at 3 50 45 PM" src="https://user-images.githubusercontent.com/43252585/58214230-d8324080-7ca9-11e9-936a-33665b8b0b3f.png">
 
